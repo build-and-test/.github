@@ -7,3 +7,26 @@ No need to install something else first.
 No need to understand how to invoke whatever build system it uses. 
 
 Here you will find repos that demonstrate techniques for making this happen.
+
+# Also
+
+## Isolation
+
+If you do this with two repos, or the same repo synced to an old state and a new state, they should not interfere with each other.
+This means any tools and dependencies should be isolated, not shared system-wide.
+
+## Repeatability
+
+If we do this on two different machines or at two different times, the results should be the same.
+This means that tools and dependencies should be pinned.
+
+## Upgrades
+
+It should be easy and obvious how to update pinned dependencies.
+See `update_dependencies.md` in each repo for instructions.
+
+# Compromise
+
+These are lofty goals, often impossible to meet with absolute perfection.
+Each example compromises to some degree.
+When picking a solution, select the compromises that are most acceptable for your context.
