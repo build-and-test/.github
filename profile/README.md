@@ -30,3 +30,8 @@ See `update_dependencies.md` in each repo for instructions.
 These are lofty goals, often impossible to meet with absolute perfection.
 Each example compromises to some degree.
 When picking a solution, select the compromises that are most acceptable for your context.
+
+# Contributions
+
+You probably know more about one of these languages/platforms/tools than I do and can see a way to make things better.
+I would be so greatful if you would send a pull request or open an issue whenever you see such an opportunity.
