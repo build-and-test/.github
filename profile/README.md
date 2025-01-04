@@ -25,6 +25,12 @@ This means that tools and dependencies should be pinned.
 It should be easy and obvious how to update pinned dependencies.
 See `update_dependencies.md` in each repo for instructions.
 
+## CI synchronization
+
+CI and local builds should behave the same way, so that if an error appears in CI it's easy to reproduce it locally.
+Typically this means that CI just runs the build-and-test script.
+This also keeps CI configuration simple.
+
 # Compromise
 
 These are lofty goals, often impossible to meet with absolute perfection.
