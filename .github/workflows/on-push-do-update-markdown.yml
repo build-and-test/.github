@@ -8,8 +8,7 @@ jobs:
     - uses: actions/checkout@v4
     - name: Run MarkdownSnippets
       run: |
-        dotnet tool install --global MarkdownSnippets.Tool
-        mdsnippets ${GITHUB_WORKSPACE}
+        ./update-markdown.sh
       shell: bash
     - name: Push changes
       run: |
