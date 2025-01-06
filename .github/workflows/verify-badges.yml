@@ -1,0 +1,26 @@
+name: Test
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *" # every day
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: verify badges (in dev container)
+        uses: devcontainers/ci@v0.3
+        with:
+          push: never
+          runCmd:
+            python -m pip install --disable-pip-version-check --requirement requirements.txt
+            python verify-badges.py
