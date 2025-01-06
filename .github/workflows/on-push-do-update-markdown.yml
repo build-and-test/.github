@@ -7,11 +7,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Run MarkdownSnippets
-      run: |
-        ./update-markdown.sh
+      run: ./update-markdown.sh
       shell: bash
     - name: Push changes
       run: |
+        set -euo pipefail
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -am "a - update markdown with mdsnippets" || echo "nothing to commit"
