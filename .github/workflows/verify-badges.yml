@@ -3,7 +3,7 @@ name: Test
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * *" # every day
+    - cron: "0 1 * * 0" # every day
 
 jobs:
   build:
