@@ -8,4 +8,16 @@ updates:
     interval: daily
   open-pull-requests-limit: 10
   commit-message:
-    prefix: "- e "
+    prefix: ". e "
+
+- package-ecosystem: "pip"
+  directory: "/"
+  schedule:
+    interval: "daily"
+  commit-message:
+    prefix: "@ r "
+  groups:
+    approvals:
+        patterns:
+          - approvaltests
+          - approval-utilities
