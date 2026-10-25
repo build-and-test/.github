@@ -4,7 +4,7 @@
 #
 #    pip-compile --newline=LF --output-file=requirements.txt --strip-extras requirements.in
 #
-certifi==2024.12.14
+certifi==2026.10.19
     # via requests
 charset-normalizer==3.4.1
     # via requests
